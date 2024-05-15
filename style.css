@@ -6,6 +6,7 @@ body {
     height: 100vh;
     background: linear-gradient(135deg, #ff5f6d, #ffc371);
     margin: 0;
+    flex-direction: column;  /* bodyの子要素を縦に配置する */
 }
 
 #game-board {
@@ -103,7 +104,7 @@ h1 {
 #draw-button:hover {
     background-color: #2980b9;
     transform: scale(1.05);
-}https://jsfiddle.net/cnmry8aq/29/#
+}
 
 #message {
     margin-top: 20px;
