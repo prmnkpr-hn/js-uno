@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNO Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-board">
+        <h1>UNO Game</h1>
+        <div id="player-container">
+            <div id="player-hand" class="hand"></div>
+            <div id="cpu1-hand" class="hand cpu-hand">CPU 1: <span class="card-count"></span> cards</div>
+            <div id="cpu2-hand" class="hand cpu-hand">CPU 2: <span class="card-count"></span> cards</div>
+            <div id="cpu3-hand" class="hand cpu-hand">CPU 3: <span class="card-count"></span> cards</div>
+        </div>
+        <div id="discard-pile-container">
+            <div id="discard-pile"></div>
+            <button id="draw-button">Draw Card</button>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
