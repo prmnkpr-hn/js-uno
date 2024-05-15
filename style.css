@@ -1,0 +1,118 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    margin: 0;
+}
+
+#game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 900px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.5em;
+}
+
+#player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.hand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.cpu-hand {
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card {
+    width: 60px;
+    height: 90px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.red { background-color: #e74c3c; }
+.green { background-color: #27ae60; }
+.blue { background-color: #2980b9; }
+.yellow { background-color: #f1c40f; }
+
+.wild { background-color: #333; color: white; }
+
+#discard-pile-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#discard-pile {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#draw-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#draw-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}https://jsfiddle.net/cnmry8aq/29/#
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+#game-board.player-turn {
+    background-color: lightyellow;
+    transition: background-color 0.5s;
+}
